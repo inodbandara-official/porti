@@ -16,11 +16,11 @@
     {% for image in images %}
       {%- if forloop.first -%}
         <div class="carousel-item active">
-          <img src="{{ image }}" class="d-block w-100">
+          <img style="max-height: 100%;" src="{{ image }}" class="d-block w-100">
         </div>
       {%- else -%}
         <div class="carousel-item">
-          <img src="{{ image }}" class="d-block w-100">
+          <img style="max-height: 100%;" src="{{ image }}" class="d-block w-100">
         </div>
       {%- endif -%}
     {% endfor %}
